@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peminjaman &amp; Pengembalian"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText android:id="@+id/etIdTrans" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ID Transaksi (Untuk Update/Delete)"/>
+    <EditText android:id="@+id/etNamaPeminjam" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Anggota"/>
+    <EditText android:id="@+id/etBukuPinjam" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Judul Buku"/>
+    <EditText android:id="@+id/etTglPinjam" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tanggal Pinjam"/>
+    <EditText android:id="@+id/etTglKembali" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tanggal Kembali"/>
+    <EditText android:id="@+id/etStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Status (Pinjam/Kembali)"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+        <Button android:id="@+id/btnSaveTrans" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Save" android:backgroundTint="#4CAF50"/>
+        <Button android:id="@+id/btnUpdateTrans" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Update" android:backgroundTint="#FFC107"/>
+        <Button android:id="@+id/btnDeleteTrans" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Delete" android:backgroundTint="#F44336"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDataTrans" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:text="Data Transaksi..."/>
+</LinearLayout>

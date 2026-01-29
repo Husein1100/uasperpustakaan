@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manajemen Buku"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText android:id="@+id/etIdBuku" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ID Buku (Otomatis)" android:enabled="false"/>
+    <EditText android:id="@+id/etJudul" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Buku"/>
+    <EditText android:id="@+id/etPengarang" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Pengarang"/>
+    <EditText android:id="@+id/etPenerbit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Penerbit"/>
+    <EditText android:id="@+id/etTahun" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tahun Terbit" android:inputType="number"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+        <Button android:id="@+id/btnSave" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Save" android:backgroundTint="#4CAF50"/>
+        <Button android:id="@+id/btnUpdate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Update" android:backgroundTint="#FFC107"/>
+        <Button android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Delete" android:backgroundTint="#F44336"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDataBuku" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:text="Data akan tampil di sini..." android:scrollbars="vertical"/>
+</LinearLayout>

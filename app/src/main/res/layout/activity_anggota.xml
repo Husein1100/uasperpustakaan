@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Anggota" android:textSize="20sp" android:textStyle="bold" android:layout_gravity="center" android:layout_marginBottom="16dp"/>
+    <EditText android:id="@+id/etIdAnggota" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ID (Otomatis)" android:enabled="false"/>
+    <EditText android:id="@+id/etNamaAnggota" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Lengkap"/>
+    <EditText android:id="@+id/etTglDaftar" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tgl Daftar (DD-MM-YYYY)"/>
+    <EditText android:id="@+id/etAlamat" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Alamat"/>
+    <EditText android:id="@+id/etTglLahir" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tgl Lahir"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+        <Button android:id="@+id/btnSaveAnggota" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Save" android:backgroundTint="#4CAF50"/>
+        <Button android:id="@+id/btnDeleteAnggota" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Delete" android:backgroundTint="#F44336"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDataAnggota" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:text="Daftar Anggota..."/>
+</LinearLayout>
